@@ -93,13 +93,13 @@ Router.configure({
     
         this.render("curriculum-builder");
 //        IF USER HAS LOGGED OUT
-        // if(Meteor.userId() == null)
-        // {   Router.go("/admin");
-        //     this.render('adminLogin');
-        // }
-        // else{
-        //     this.render("curriculum-builder");
-        // }
+        if(Meteor.userId() == null)
+        {   Router.go("/admin");
+            this.render('adminLogin');
+        }
+        else{
+            this.render("curriculum-builder");
+        }
 
         
     }); 
@@ -164,13 +164,13 @@ Router.configure({
     
         this.render("dailyActivityReport");
         //IF USER HAS LOGGED OUT
-        if(Meteor.userId() == null)
-        {          Router.go("/admin");
-            this.render('adminLogin');
-        }
-        else{
-            this.render("dailyActivityReport");
-        }
+        // if(Meteor.userId() == null)
+        // {          Router.go("/admin");
+        //     this.render('adminLogin');
+        // }
+        // else{
+        //     this.render("dailyActivityReport");
+        // }
     });
     
     Router.route('/edit-curriculum', function() {

@@ -369,3 +369,9 @@ Router.configure({
     
     
     // ========================================== END HELP ROUTES ===============================================
+
+    Router.route('/googlec7c5776d66561db2.html', function(){
+    
+            this.render("google");
+        
+    });

@@ -2,8 +2,8 @@ import { Meteor } from 'meteor/meteor';
 import { Email } from 'meteor/email';
 Meteor.startup(() => {
   // code to run on server at startup
-  process.env.MAIL_URL='smtps://spanglerfdc@gmail.com:Force18!@smtp.gmail.com:465';
-  
+  // process.env.MAIL_URL='smtps://spanglerfdc@gmail.com:Force18!@smtp.gmail.com:465';
+  process.env.MAIL_URL = "smtps://postmaster%40postmaster@sandbox8d00a43312d74d4092388af74860e360.mailgun.org:85f34843c033c5c6ec4218828ebbd87a-b3780ee5-84a73d1b@smtp.mailgun.org:587";
 
 });
 //if(Meteor.isServer){

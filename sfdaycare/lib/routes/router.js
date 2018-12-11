@@ -92,15 +92,15 @@ Router.configure({
     Router.route('/curriculum-builder', function(){
     
         this.render("curriculum-builder");
-        //IF USER HAS LOGGED OUT
-        if(Meteor.userId() == null)
-        {   Router.go("/admin");
-            this.render('adminLogin');
-        }
-        else{
-            this.render("curriculum-builder");
-        }
-        
+//        IF USER HAS LOGGED OUT
+        // if(Meteor.userId() == null)
+        // {   Router.go("/admin");
+        //     this.render('adminLogin');
+        // }
+        // else{
+        //     this.render("curriculum-builder");
+        // }
+
         
     }); 
     

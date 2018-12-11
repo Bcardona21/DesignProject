@@ -101,6 +101,7 @@ Router.configure({
             this.render("curriculum-builder");
         }
         
+        
     }); 
     
     //EXPENSE TRACKER ROUTE

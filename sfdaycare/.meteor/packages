@@ -25,8 +25,7 @@ twbs:bootstrap
 pcel:loading
 
 
-
-ian:accounts-ui-bootstrap-3
+accounts-ui
 accounts-google
 google-config-ui
 useraccounts:bootstrap

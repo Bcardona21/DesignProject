@@ -1,0 +1,85 @@
+<template name="manageReceipts">
+        <br>
+        <br>
+        <center><h1>Expense Tracker</h1></center>
+        <br>
+        <br>
+    
+    
+        <div class="container">
+            <div class="row center-block" style="height:500px">
+                <div class="col-xs-12">
+                    
+    
+                    
+                    <div id="managethereceipts" class="tab-pane fade in active">
+                        <!--<form action="">-->
+                        <br><br>
+                        <ul>
+                            {{#each receipts}}
+                            {{> displayReceipts}}
+                            {{/each}}
+                        </ul>
+    
+    
+    
+                        <input type="submit" class="btn btn-success" value="Save Receipt">
+                        <br><br><br>
+    
+    
+                        <br><br>
+
+    
+                        <!-- </form>-->
+    
+                    </div>
+    
+    
+    
+                    </div>
+                </div><!--end tab-content-->
+                </div><!--end column-->
+            
+            <div class="row center-block">
+                <div class="col-xs-12">
+                    <a href="{{pathFor 'admin-dash'}}" class="btn btn-primary" role="button">Back</a>
+                </div>
+            </div>
+        
+    </template>
+    
+    <template name="displayReceipts">
+        <table border="3" align="center">
+            <style>
+                input {
+                    width: 100px;
+                    height: 60px;
+                    font-size: 13pt
+                }
+            </style>
+    
+            <td>
+                <form>
+                    <input type="checkbox" id="check" checked= "{{isChecked}}" style="width: 20px; height:15px">
+                </form>
+            </td>
+            <th>Receipt Type:</th>
+            <input type="text" value="{{ReceiptType}}" />
+            <th>Receipt Total:</th>
+            <input type="text" value="{{ReceiptTotal}}" />
+            <th>Receipt Date:</th>
+            <input type="text" value="{{ReceiptDate}}" /> 
+            <th>Receipt Notes:</th>
+            <input type="text" value="{{ReceiptNotes}}" style="width:350px;" />
+            <th></th>
+            <button class="btn btn-danger deleteBtn ">delete</button>
+    
+    
+        </table>
+        <br />
+            
+    
+    </template>
+    
+    
+    

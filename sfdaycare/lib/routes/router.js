@@ -61,14 +61,14 @@ Router.configure({
     
         this.render("child-manager");
         //IF USER HAS LOGGED OUT
-        if(Meteor.userId() == null)
-        {          
-            Router.go("/admin");
-            this.render('adminLogin');
-        }
-        else{
-            this.render("child-manager");
-        }
+        // if(Meteor.userId() == null)
+        // {          
+        //     Router.go("/admin");
+        //     this.render('adminLogin');
+        // }
+        // else{
+        //     this.render("child-manager");
+        // }
     });
     
     
@@ -138,13 +138,13 @@ Router.configure({
     
         this.render("childList");
         //IF USER HAS LOGGED OUT
-        if(Meteor.userId() == null)
-        {          Router.go("/admin");
-            this.render('adminLogin');
-        }
-        else{
-            this.render("childList");
-        }
+        // if(Meteor.userId() == null)
+        // {          Router.go("/admin");
+        //     this.render('adminLogin');
+        // }
+        // else{
+        //     this.render("childList");
+        // }
     });
     
     Router.route('/edit-child', function() {

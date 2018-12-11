@@ -5,7 +5,6 @@ Meteor.startup(() => {
   process.env.MAIL_URL='smtps://spanglerfdc@gmail.com:Force18!@smtp.gmail.com:465';
   
 
-
 });
 //if(Meteor.isServer){
 Meteor.methods({

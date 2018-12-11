@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-
+import { Email } from 'meteor/email';
 Meteor.startup(() => {
   // code to run on server at startup
   process.env.MAIL_URL='smtps://spanglerfdc@gmail.com:Force18!@smtp.gmail.com:465';
